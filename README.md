@@ -4,11 +4,9 @@ Hands-on Microsoft 365 administration and IT support practice, documented as fic
 
 ## About Me
 
-I am an IT Support Specialist with hands-on experience providing Tier 1–2 end-user support in fast-paced environments. In my current role at OpDecision, I handle 50+ service desk tickets daily, troubleshoot device, account access, and connectivity issues, and document incidents in ServiceNow and Forge OS. I also support device provisioning and lifecycle management, including inventory tracking for 1,000+ devices.
+Hey! 👋 I'm an IT Support Specialist who enjoys solving tech puzzles and making technology a little less frustrating. From tackling 50+ help desk tickets a day to troubleshooting devices and user accounts, I love finding fixes that make someone's day easier.
 
-My technical background includes Windows 10/11, macOS, Microsoft 365 Admin Center, mobile device support, and networking fundamentals such as TCP/IP, DNS, and DHCP. I hold CompTIA A+, Network+, and Security+ certifications, and I am working toward Microsoft Azure Fundamentals (AZ-900).
-
-This portfolio documents my planned hands-on Microsoft 365 administration labs as I continue developing my help desk, identity management, and troubleshooting skills.
+I'm CompTIA A+, Network+, and Security+ certified, currently learning more about Microsoft 365 and working toward AZ-900. This is where I'll share my hands-on labs, lessons learned, and a few tech wins along the way! 🚀
 
 ## Planned Lab Environment
 
