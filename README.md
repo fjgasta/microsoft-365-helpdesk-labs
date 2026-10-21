@@ -4,9 +4,11 @@ Hands-on Microsoft 365 administration and IT support practice, documented as fic
 
 ## About Me
 
-I am an aspiring IT Support and Cybersecurity professional with CompTIA A+, CompTIA Security+, and Splunk Core Certified User certifications. This repository is a learning portfolio for developing Microsoft 365 administration, identity management, troubleshooting, and ticket documentation skills.
+I am an IT Support Specialist with hands-on experience providing Tier 1–2 end-user support in fast-paced environments. In my current role at OpDecision, I handle 50+ service desk tickets daily, troubleshoot device, account access, and connectivity issues, and document incidents in ServiceNow and Forge OS. I also support device provisioning and lifecycle management, including inventory tracking for 1,000+ devices.
 
-> **Portfolio status:** All four labs are **Planned**. Documentation describes intended exercises, not completed work or verified results.
+My technical background includes Windows 10/11, macOS, Microsoft 365 Admin Center, mobile device support, and networking fundamentals such as TCP/IP, DNS, and DHCP. I hold CompTIA A+, Network+, and Security+ certifications, and I am working toward Microsoft Azure Fundamentals (AZ-900).
+
+This portfolio documents my planned hands-on Microsoft 365 administration labs as I continue developing my help desk, identity management, and troubleshooting skills.
 
 ## Planned Lab Environment
 
