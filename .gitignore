@@ -1,0 +1,14 @@
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+*credentials*
+*secrets*
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
