@@ -27,6 +27,12 @@ A fictional employee cannot sign in and requests a password reset.
 - [ ] Record any errors and troubleshooting performed
 - [ ] Record the final outcome and completion date
 
+## Evidence — Account Creation
+
+![Microsoft 365 admin center confirming Alex Johnson was created](screenshots/01-user-created.jpg)
+
+*Screenshot 1: Microsoft 365 Admin Center confirms creation of the fictional test user Alex Johnson. Account creation is complete; password reset and sign-in verification are still pending.*
+
 ## Screenshot Checklist
 
 - [ ] User lookup (sanitized)
