@@ -54,9 +54,20 @@ The license verification screen showed **23 of 25 licenses available** after pro
 
 ## Screenshot Evidence
 
-Screenshots were captured during the walkthrough, including the new-user setup, final review, creation confirmation, license verification, and saved contact information. **GitHub evidence upload is pending.**
+The following six screenshots were captured from the Microsoft 365 Admin Center during the onboarding lab and uploaded to this repository:
 
-When uploaded, store only sanitized images in a `screenshots/` directory. Do not include temporary passwords, authentication codes, payment details, or tenant secrets.
+| Step | Screenshot |
+| --- | --- |
+| New user basics | [01 — New User Creation](screenshots/01-new-user-creation.jpg) |
+| HR role and profile settings | [02 — Employee Profile Settings](screenshots/02-employee-profile-settings.jpg) |
+| Final settings review | [03 — Onboarding Review](screenshots/03-onboarding-review.jpg) |
+| Account creation confirmation | [04 — User Created Successfully](screenshots/04-user-created-successfully.jpg) |
+| Post-creation license check | [05 — License Verification](screenshots/05-license-verification.jpg) |
+| Saved contact information | [06 — Employee Profile Verified](screenshots/06-employee-profile-verified.jpg) |
+
+**Evidence upload:** Completed. Screenshots show the lab configuration and verification; they do not establish that first sign-in or MFA enrollment was tested.
+
+**Security note:** Screenshots should not expose temporary passwords, authentication codes, payment details, or tenant secrets.
 
 ## Skills Demonstrated
 
