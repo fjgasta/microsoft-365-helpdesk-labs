@@ -1,44 +1,62 @@
-# INC0001003 — License Assignment
+# INC0001003 — Microsoft 365 License Assignment
 
-**Status:** Planned  
-**Environment:** Dedicated Microsoft 365 test tenant (not production)  
-**Ticket type:** Help desk lab
+**Status:** Completed — license assignment verified  
+**Environment:** JGasta Labs, dedicated Microsoft 365 test tenant (not production)  
+**Ticket type:** Simulated help desk service request  
+**Test user:** Alex Johnson (fictional)
 
 ## Scenario
 
-A fictional employee needs access to an eligible Microsoft 365 service.
+A fictional employee, Alex Johnson, requires a Microsoft 365 Business Premium license to access eligible organizational services.
+
+## Objective
+
+Assign an available Business Premium trial license to the test account and verify that the assignment persists after saving.
 
 ## Prerequisites
 
-- [ ] Access to a test tenant and suitable admin permissions
-- [ ] Fictional test account and required trial features/licenses
-- [ ] Review tenant policies and confirm the exercise is permitted
+- [x] Access to the Microsoft 365 Admin Center with appropriate administrator permissions
+- [x] Fictional test account created
+- [x] Microsoft 365 Business Premium trial available in the existing test tenant
+- [x] Available license capacity confirmed
 
-## Planned Procedure
+## Procedure Performed
 
-- [ ] Review available trial subscriptions and remaining seats
-- [ ] locate a test user
-- [ ] assign an available, appropriate license
-- [ ] document service-plan selection.
+1. Signed in to the Microsoft 365 Admin Center for JGasta Labs.
+2. Navigated to **Users → Active users** and opened **Alex Johnson**.
+3. Selected **Licenses and apps**.
+4. Confirmed the usage location was **United States**.
+5. Selected **Microsoft 365 Business Premium**.
+6. Clicked **Save changes** and received confirmation that changes were saved.
+7. Reopened the user profile and verified that the license remained selected.
 
-## Verification Checklist
+## Verification
 
-- [ ] Confirm the assigned license appears on the test user's account; test service access if included in the trial.
-- [ ] Record any errors and troubleshooting performed
-- [ ] Record the final outcome and completion date
+- [x] Microsoft 365 Business Premium license selected for the test user
+- [x] Save confirmation received
+- [x] Assignment persisted after reopening **Licenses and apps**
+- [ ] Individual Microsoft 365 service access tested (not performed in this lab)
 
-## Screenshot Checklist
+The assignment screen displayed **24 of 25 licenses available** when the license was selected. Service-plan-specific access and application sign-in were not separately tested.
 
-- [ ] Available licenses without subscription identifiers
-- [ ] sanitized assignment screen
-- [ ] verification view.
+## Troubleshooting Notes
 
-Save only redacted screenshots in a `screenshots/` folder when the lab is completed. Do not include passwords, authentication codes, real user information, or tenant secrets.
+The Business Premium subscription was initially unavailable in the tenant. The initial signup did not complete successfully. A new Business Premium trial order was subsequently completed through the existing **JGasta Labs** organization, allowing license assignment.
 
-## Execution Notes
+## Screenshot Evidence
 
-_Not started. Add actual steps, findings, and sanitized evidence after completing the lab._
+Store sanitized evidence in the `screenshots/` folder:
+
+- `02-business-premium-license-assigned.png` — verified license selection in the test user's profile
+
+**Evidence upload:** Pending. The screenshot has been captured but is not yet linked here.
+
+Do not publish passwords, authentication codes, payment details, order numbers, subscription identifiers, or other sensitive information.
+
+## Skills Demonstrated
+
+Microsoft 365 Admin Center navigation; user administration; software license assignment; subscription troubleshooting; change verification; help desk documentation.
 
 ## Result
 
-**Not performed — Planned.**
+**Resolved:** Microsoft 365 Business Premium was assigned to the fictional employee account and the saved assignment was verified. This is a hands-on training exercise, not a production support ticket.
