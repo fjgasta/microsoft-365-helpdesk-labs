@@ -1,44 +1,67 @@
 # INC0001002 — New Employee Onboarding
 
-**Status:** Planned  
-**Environment:** Dedicated Microsoft 365 test tenant (not production)  
-**Ticket type:** Service request
+**Status:** Completed — account creation and configuration verified  
+**Environment:** JGasta Labs, Microsoft 365 test tenant (not production)  
+**Ticket type:** Simulated IT service request  
+**Completion date:** October 28, 2026
 
 ## Scenario
 
-A fictional new hire needs a Microsoft 365 account.
+HR requests a Microsoft 365 account for a fictional new hire, **Jordan Rivera**, joining the Human Resources department as an **HR Coordinator**.
 
-## Prerequisites
+## Objective
 
-- [ ] Access to a test tenant and suitable admin permissions
-- [ ] Fictional test account and required trial features/licenses
-- [ ] Review tenant policies and confirm the exercise is permitted
+Provision a standard employee account, assign the required Microsoft 365 license, populate organizational profile attributes, and verify the saved configuration.
 
-## Planned Procedure
+## New Hire Details
 
-- [ ] Prepare fictional user details
-- [ ] create a test user in the Microsoft 365 admin center
-- [ ] configure appropriate profile settings and access
-- [ ] document the onboarding checklist.
+| Attribute | Value |
+| --- | --- |
+| Employee | Jordan Rivera (fictional) |
+| Username | `jordan.rivera@GastaLabs.onmicrosoft.com` |
+| Job title | HR Coordinator |
+| Department | Human Resources |
+| Office | Main Office |
+| Access role | Standard user; no administrator access |
+| License | Microsoft 365 Business Premium |
+| Usage location | United States |
+
+## Procedure Performed
+
+1. Opened **Microsoft 365 Admin Center → Users → Active users → Add a user**.
+2. Entered the fictional employee's name and username.
+3. Enabled automatic temporary-password generation and required a password change at first sign-in in the creation wizard.
+4. Set the usage location to **United States** and selected **Microsoft 365 Business Premium**.
+5. Kept the role as **User (no administration access)**, following least-privilege principles.
+6. Entered **HR Coordinator** as the job title, **Human Resources** as the department, and **Main Office** as the office.
+7. Reviewed the configuration and selected **Finish adding**.
+8. Received confirmation that **Jordan Rivera was added to active users**.
+9. Reopened the user account and checked the account role, license, and contact information.
 
 ## Verification Checklist
 
-- [ ] Confirm the user exists, has the intended settings, and can sign in where licensing and tenant policy permit.
-- [ ] Record any errors and troubleshooting performed
-- [ ] Record the final outcome and completion date
+- [x] Microsoft 365 confirmed the account was added to Active users
+- [x] Name and account profile displayed correctly
+- [x] User had no administrator access
+- [x] Microsoft 365 Business Premium remained assigned after account creation
+- [x] Job title saved as **HR Coordinator**
+- [x] Department saved as **Human Resources**
+- [x] Office saved as **Main Office**
+- [ ] First sign-in and forced password change independently tested
+- [ ] MFA registration tested (separate planned lab INC0001004)
 
-## Screenshot Checklist
+The license verification screen showed **23 of 25 licenses available** after provisioning the account. The Business Premium trial indicated an expiration date of **November 27, 2026**.
 
-- [ ] Create-user form with fictional details
-- [ ] user listing
-- [ ] sanitized account settings.
+## Screenshot Evidence
 
-Save only redacted screenshots in a `screenshots/` folder when the lab is completed. Do not include passwords, authentication codes, real user information, or tenant secrets.
+Screenshots were captured during the walkthrough, including the new-user setup, final review, creation confirmation, license verification, and saved contact information. **GitHub evidence upload is pending.**
 
-## Execution Notes
+When uploaded, store only sanitized images in a `screenshots/` directory. Do not include temporary passwords, authentication codes, payment details, or tenant secrets.
 
-_Not started. Add actual steps, findings, and sanitized evidence after completing the lab._
+## Skills Demonstrated
+
+Microsoft 365 Admin Center; new-hire onboarding; user provisioning; software license assignment; organizational attribute management; least-privilege access; post-creation verification; service-request documentation.
 
 ## Result
 
-**Not performed — Planned.**
+**Resolved for lab scope:** Jordan Rivera's fictional employee account was created, licensed, and its organizational profile settings verified. Interactive sign-in and MFA enrollment were not tested as part of this exercise.
