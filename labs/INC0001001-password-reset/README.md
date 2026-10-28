@@ -40,7 +40,6 @@ Screenshots are in the [screenshots folder](screenshots/). The evidence sequence
 | 04 | Update your password prompt | Password change required |
 | 05 | Microsoft 365 after sign-in | Test account authenticated; app list failed to load |
 
-**Security note:** Do not commit temporary passwords, MFA QR codes, verification codes, or recovery secrets. Screenshots should be redacted before publishing. Any recreated or enhanced screenshots should be labeled as illustrations rather than original system evidence.
 
 ## Troubleshooting notes
 
