@@ -45,13 +45,14 @@ The Business Premium subscription was initially unavailable in the tenant. The i
 
 ## Screenshot Evidence
 
-Store sanitized evidence in the `screenshots/` folder:
+The following screenshots have been uploaded to this lab folder:
 
-- `02-business-premium-license-assigned.png` — verified license selection in the test user's profile
+- [Business Premium license assignment verification](02-business-premium-license-assigned.jpg) — primary evidence of the saved license assignment.
+- [Additional Microsoft 365 screenshot](Screenshot_20261028_180536_Samsung%20Browser.jpg) — supplementary screenshot captured during the lab.
 
-**Evidence upload:** Pending. The screenshot has been captured but is not yet linked here.
+**Evidence upload:** Completed. Both files are linked above.
 
-Do not publish passwords, authentication codes, payment details, order numbers, subscription identifiers, or other sensitive information.
+Screenshots should be reviewed for passwords, authentication codes, payment details, order numbers, subscription identifiers, or other sensitive information before sharing this repository publicly.
 
 ## Skills Demonstrated
 
