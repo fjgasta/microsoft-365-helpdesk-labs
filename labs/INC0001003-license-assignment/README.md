@@ -1,7 +1,7 @@
 # INC0001003 — Microsoft 365 License Assignment
 
 **Status:** Completed — license assignment verified  
-**Environment:** JGasta Labs, dedicated Microsoft 365 test tenant (not production)  
+**Environment:** JGasta Labs, dedicated Microsoft 365 test tenant  
 **Ticket type:** Simulated help desk service request  
 **Test user:** Alex Johnson (fictional)
 
@@ -48,11 +48,8 @@ The Business Premium subscription was initially unavailable in the tenant. The i
 The following screenshots have been uploaded to this lab folder:
 
 - [Business Premium license assignment verification](02-business-premium-license-assigned.jpg) — primary evidence of the saved license assignment.
-- [Additional Microsoft 365 screenshot](Screenshot_20261028_180536_Samsung%20Browser.jpg) — supplementary screenshot captured during the lab.
 
-**Evidence upload:** Completed. Both files are linked above.
-
-Screenshots should be reviewed for passwords, authentication codes, payment details, order numbers, subscription identifiers, or other sensitive information before sharing this repository publicly.
+**Evidence upload:** Completed.
 
 ## Skills Demonstrated
 
