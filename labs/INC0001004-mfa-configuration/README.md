@@ -1,6 +1,6 @@
 # INC0001004 — Microsoft 365 MFA Configuration
 
-**Status:** Completed (final verification screenshot pending upload)  
+**Status:** Completed — documentation and screenshot evidence uploaded  
 **Date performed:** October 28, 2026  
 **Environment:** JGasta Labs — Microsoft 365 / Microsoft Entra test tenant  
 **Ticket type:** Help Desk / Identity and Access Management (IAM)  
@@ -50,7 +50,7 @@ A fictional employee, Jordan Rivera, requires multifactor authentication (MFA) t
 | Authenticator added confirmation | Verified |
 | First-time password change | Completed |
 | Microsoft 365 test-user sign-in | Successful, confirmed during lab |
-| Security info lists Microsoft Authenticator | Verified during lab; screenshot upload pending |
+| Security info lists Microsoft Authenticator | Verified; screenshot uploaded |
 
 **Outcome: Resolved — MFA configured and tested successfully for the fictional test account.**
 
@@ -92,9 +92,9 @@ These screenshots were captured during the hands-on lab and uploaded to the repo
 
 ![Stay signed in prompt](screenshots/08-stay-signed-in.jpg)
 
-### 9. Security info verification — awaiting upload
+### 9. Security info verification
 
-The final **Security info** screen was observed during the lab and showed Microsoft Authenticator registered for push MFA. Upload `09-security-info-verification.jpg` to the `screenshots/` directory to complete the visual evidence set.
+![Security info showing Microsoft Authenticator registered for push MFA](screenshots/09-security-info-verification.jpg)
 
 ## Skills Demonstrated
 
@@ -108,4 +108,4 @@ The final **Security info** screen was observed during the lab and showed Micros
 
 ## Ticket Closure Notes
 
-**Resolution:** Enabled per-user MFA for Jordan Rivera, registered Microsoft Authenticator, completed the MFA approval test, and verified a successful Microsoft 365 sign-in. Final security-info screenshot remains to be uploaded to the GitHub evidence folder.
+**Resolution:** Enabled per-user MFA for Jordan Rivera, registered Microsoft Authenticator, completed the MFA approval test, and verified a successful Microsoft 365 sign-in. All nine supporting screenshots have been uploaded to the GitHub evidence folder.
