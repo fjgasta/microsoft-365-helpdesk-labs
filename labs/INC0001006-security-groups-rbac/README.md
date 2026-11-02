@@ -65,24 +65,24 @@ The fictional IT Support department needs a maintainable way to give authorized 
 
 ## Screenshot Evidence
 
-The following original screenshots were captured during the lab. Upload sanitized copies into the adjacent `screenshots/` folder using these filenames, then link them here.
+All 12 screenshot files have been uploaded to the adjacent `screenshots/` folder. Select any filename below to view the corresponding evidence.
 
 | Suggested filename | Evidence |
 | --- | --- |
-| `01-security-group-configuration.jpg` | New security group configuration |
-| `02-security-group-created.jpg` | Group visible in Entra All groups |
-| `03-group-membership.jpg` | Alex Johnson in IT-Support-Team |
-| `04-user-group-memberships.jpg` | Alex's group memberships |
-| `05-no-directory-roles.jpg` | No directory roles assigned |
-| `06-sharepoint-site-created.jpg` | IT Support Lab in Active sites |
-| `07-sharepoint-permission-levels.jpg` | Members Edit, Owners Full Control, Visitors Read |
-| `08-security-group-selected.jpg` | IT-Support-Team selected for SharePoint sharing |
-| `09-security-group-added.jpg` | IT-Support-Team listed in SharePoint Members |
-| `10-alex-signed-in.jpg` | Alex Johnson signed in |
-| `11-alex-sharepoint-access.jpg` | Private SharePoint site opened as Alex |
-| `12-alex-document-created.jpg` | IAM-Access-Test.docx created by Alex |
+| [01-security-group-configuration.jpg](screenshots/01-security-group-configuration.jpg) | New security group configuration |
+| [02-security-group-created.jpg](screenshots/02-security-group-created.jpg) | Group visible in Entra All groups |
+| [03-group-membership.jpg](screenshots/03-group-membership.jpg) | Alex Johnson in IT-Support-Team |
+| [04-user-group-memberships.jpg](screenshots/04-user-group-memberships.jpg) | Alex's group memberships |
+| [05-no-directory-roles.jpg](screenshots/05-no-directory-roles.jpg) | No directory roles assigned |
+| [06-sharepoint-site-created.jpg](screenshots/06-sharepoint-site-created.jpg) | IT Support Lab in Active sites |
+| [07-sharepoint-permission-levels.jpg](screenshots/07-sharepoint-permission-levels.jpg) | Members Edit, Owners Full Control, Visitors Read |
+| [08-security-group-selected.jpg](screenshots/08-security-group-selected.jpg) | IT-Support-Team selected for SharePoint sharing |
+| [09-security-group-added.jpg](screenshots/09-security-group-added.jpg) | IT-Support-Team listed in SharePoint Members |
+| [10-alex-signed-in.jpg](screenshots/10-alex-signed-in.jpg) | Alex Johnson signed in |
+| [11-alex-sharepoint-access.jpg](screenshots/11-alex-sharepoint-access.jpg) | Private SharePoint site opened as Alex |
+| [12-alex-document-created.jpg](screenshots/12-alex-document-created.jpg) | IAM-Access-Test.docx created by Alex |
 
-**Evidence status:** The screenshots were shared in the ChatGPT lab session. They are not yet embedded in this README; the image files must be uploaded to the repository separately. Review screenshots for sensitive tenant/account details before publishing.
+**Evidence status:** All 12 image files were verified in this GitHub repository and linked above. Review screenshots for sensitive tenant/account details before publishing.
 
 ## Resolution
 
