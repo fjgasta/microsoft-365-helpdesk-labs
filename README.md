@@ -12,7 +12,7 @@ I'm an IT Support professional with experience troubleshooting mobile devices, u
 
 ## Lab Progress
 
-**4 completed · 6 planned · 10 total labs**
+**5 completed · 5 planned · 10 total labs**
 
 ## Lab Environment
 
@@ -31,7 +31,7 @@ I'm an IT Support professional with experience troubleshooting mobile devices, u
 | INC0001002 | New Employee Onboarding | **Completed** | [View lab](labs/INC0001002-new-employee-onboarding/README.md) |
 | INC0001003 | License Assignment | **Completed** | [View lab](labs/INC0001003-license-assignment/README.md) |
 | INC0001004 | MFA Configuration | **Completed** | [View lab](labs/INC0001004-mfa-configuration/README.md) |
-| INC0001005 | User Offboarding & Access Revocation | **Planned** | [View lab](labs/INC0001005-user-offboarding-access-revocation/README.md) |
+| INC0001005 | User Offboarding & Access Revocation | **Completed** | [View lab](labs/INC0001005-user-offboarding-access-revocation/README.md) |
 | INC0001006 | Security Groups & RBAC | **Planned** | [View lab](labs/INC0001006-security-groups-rbac/README.md) |
 | INC0001007 | Shared Mailbox Configuration | **Planned** | [View lab](labs/INC0001007-shared-mailbox-configuration/README.md) |
 | INC0001008 | SharePoint & OneDrive Permissions | **Planned** | [View lab](labs/INC0001008-sharepoint-onedrive-permissions/README.md) |
@@ -66,7 +66,7 @@ Each lab is structured like a help desk ticket and includes:
 - [x] INC0001002 — New Employee Onboarding
 - [x] INC0001003 — License Assignment
 - [x] INC0001004 — MFA Configuration
-- [ ] INC0001005 — User Offboarding & Access Revocation
+- [x] INC0001005 — User Offboarding & Access Revocation
 - [ ] INC0001006 — Security Groups & RBAC
 - [ ] INC0001007 — Shared Mailbox Configuration
 - [ ] INC0001008 — SharePoint & OneDrive Permissions
