@@ -1,6 +1,6 @@
 # INC0001005 — User Offboarding and Access Revocation
 
-**Status:** Completed — screenshot upload pending  
+**Status:** Completed — screenshots uploaded  
 **Lab date:** November 2, 2026  
 **Environment:** JGasta Labs Microsoft 365 / Microsoft Entra test tenant (non-production)  
 **Ticket type:** Simulated help desk service request / Identity and Access Management (IAM)  
@@ -44,22 +44,51 @@ Human Resources reports that a fictional employee, Philip Stone, is leaving the 
 
 **Interpretation:** The sign-in test showed an **account-locked** message. That alone does not establish the precise reason for the lock; the separately captured admin screens verify the disabled sign-in setting. Session revocation was confirmed by the administrative success notification, not by inspecting every client session.
 
-## Screenshot Evidence — Awaiting Upload
+## Screenshot Evidence
 
-The following eight screenshots were captured during the exercise. Upload the **original, reviewed/sanitized images** to the `screenshots/` directory with these filenames. Once uploaded, update this section with embedded image links.
+All ten original lab screenshots have been uploaded to the `screenshots/` directory. The first eight follow the ticket workflow; the last two provide additional context.
 
-| # | Filename | Evidence |
-| --- | --- | --- |
-| 1 | `01-user-before-offboarding.jpg` | Initial Philip Stone account |
-| 2 | `02-license-before-removal.jpg` | Business Premium license assigned |
-| 3 | `03-sign-in-blocked.jpg` | Block sign-in confirmation |
-| 4 | `04-sessions-revoked.jpg` | Successful session revocation |
-| 5 | `05-group-membership-before.jpg` | JGasta Labs membership |
-| 6 | `06-group-membership-removed.jpg` | Membership removal confirmation |
-| 7 | `07-license-removed.jpg` | License removal saved; 0 assigned |
-| 8 | `08-sign-in-access-denied.jpg` | Observed account-locked message |
+### 1. Initial account overview
 
-**Privacy note:** Review screenshots before publication. Remove any secrets, credentials, tokens, or unnecessary tenant identifiers. This lab used a fictional user in a test tenant.
+![Initial account overview](screenshots/01-user-before-offboarding.jpg)
+
+### 2. Business Premium license before removal
+
+![Business Premium license before removal](screenshots/02-license-before-removal.jpg)
+
+### 3. Sign-in blocked confirmation
+
+![Sign-in blocked confirmation](screenshots/03-sign-in-blocked.jpg)
+
+### 4. Session revocation success
+
+![Session revocation success](screenshots/04-sessions-revoked.jpg)
+
+### 5. Group membership before removal
+
+![Group membership before removal](screenshots/05-group-membership-before.jpg)
+
+### 6. Group membership removed
+
+![Group membership removed](screenshots/06-group-membership-removed.jpg)
+
+### 7. License removal confirmation
+
+![License removal confirmation](screenshots/07-license-removed.jpg)
+
+### 8. Sign-in test: account locked
+
+![Sign-in test: account locked](screenshots/08-sign-in-access-denied.jpg)
+
+### 9. Additional evidence: blocked account overview
+
+![Additional evidence: blocked account overview](screenshots/09-blocked-account-overview.jpg)
+
+### 10. Additional evidence: revoke sessions prompt
+
+![Additional evidence: revoke sessions prompt](screenshots/10-revoke-sessions-confirmation-prompt.jpg)
+
+**Privacy note:** Screenshots are from a fictional user in a test tenant. Do not publish passwords, authentication codes, access tokens, or recovery information.
 
 ## Skills Demonstrated
 
@@ -74,4 +103,4 @@ The following eight screenshots were captured during the exercise. Upload the **
 
 **Completed:** Philip Stone's test account was blocked from sign-in, sign-in sessions were revoked, JGasta Labs group membership was removed, and the Business Premium license was reclaimed. A subsequent sign-in attempt did not obtain access and displayed an account-locked message. The user account was retained; no permanent deletion was performed.
 
-**Documentation follow-up:** Upload and link the eight authentic lab screenshots.
+**Documentation:** Ten supporting screenshots uploaded and linked in this README.
