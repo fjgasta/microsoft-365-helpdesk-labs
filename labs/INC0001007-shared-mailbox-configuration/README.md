@@ -66,12 +66,12 @@ Sent a test message with subject **IT Support Shared Mailbox Test** to Alex John
 - [x] Shared mailbox added to Outlook on the web
 - [x] Test message received showing IT Support as sender
 - [x] Sender profile verified as `itsupport@GastaLabs.onmicrosoft.com`
-- [x] Ten original screenshots uploaded to this lab's `screenshots/` folder
+- [x] Eleven original screenshots uploaded to this lab's `screenshots/` folder
 - [ ] Optional cleanup / rollback documented if the test mailbox is later removed
 
 ## Screenshot Evidence
 
-The following **10 authentic screenshots** are uploaded in [the screenshots folder](screenshots/). They document the initial setup and troubleshooting. Screenshots showing a later successful Outlook connection or email delivery have not been uploaded yet.
+The following **11 authentic screenshots** are uploaded in [the screenshots folder](screenshots/). They document the initial setup and troubleshooting. The final screenshot shows the received test message and the shared mailbox in Outlook. A separate sender-address detail screenshot has not yet been uploaded.
 
 ### 1. Initial inventory
 ![Shared mailboxes before creation](screenshots/01-shared-mailboxes-before-creation.jpg)
@@ -93,10 +93,15 @@ The following **10 authentic screenshots** are uploaded in [the screenshots fold
 ![Attempt using a different mailbox address](screenshots/09-outlook-incorrect-mailbox-error.jpg)
 ![Permission error for the correct mailbox](screenshots/10-outlook-correct-mailbox-permission-error.jpg)
 
-**Evidence limitation:** These images prove the mailbox configuration and initial access errors. The later successful connection and Send As email test described above require separate screenshots for visual verification.
+### 6. Successful test email received
+![Alex Johnson received the test email from IT Support](screenshots/11-test-email-received.jpg)
+
+The received message displays **IT Support** as the sender, **Alex Johnson** as the recipient, and the subject **IT Support Shared Mailbox Test**. The IT Support mailbox is also visible in Outlook's folder pane. This verifies delivery and the displayed sender identity.
+
+**Evidence limitation:** The screenshot does not display the sender's full email address. A separate sender-details screenshot would strengthen verification of the exact address.
 
 ## Skills Demonstrated
 Microsoft 365 administration, Exchange Online shared mailboxes, Full Access vs. Send As delegation, Outlook on the web, permissions troubleshooting, verification, and ticket documentation.
 
 ## Result
-**Completed.** Created the IT Support shared mailbox, delegated access to Alex Johnson, recovered from initial Outlook access errors, and verified successful delivery of a test message from the shared mailbox identity. Ten configuration and troubleshooting screenshots are embedded above; later successful Outlook and Send As verification screenshots remain to be uploaded.
+**Completed.** Created the IT Support shared mailbox, delegated access to Alex Johnson, recovered from initial Outlook access errors, and verified successful delivery of a test message from the shared mailbox identity. Eleven screenshots are embedded above, including the received test email. A separate screenshot of the full sender address is still recommended.
