@@ -66,29 +66,37 @@ Sent a test message with subject **IT Support Shared Mailbox Test** to Alex John
 - [x] Shared mailbox added to Outlook on the web
 - [x] Test message received showing IT Support as sender
 - [x] Sender profile verified as `itsupport@GastaLabs.onmicrosoft.com`
-- [ ] Original screenshots uploaded to this lab's `screenshots/` folder
+- [x] Ten original screenshots uploaded to this lab's `screenshots/` folder
 - [ ] Optional cleanup / rollback documented if the test mailbox is later removed
 
-## Screenshot Evidence — Upload Pending
-Upload only authentic screenshots from the lab to `screenshots/`. Suggested filenames:
+## Screenshot Evidence
 
-1. `01-shared-mailbox-initial-list.jpg` — mailbox list before creation
-2. `02-add-shared-mailbox.jpg` — name and address entry
-3. `03-shared-mailbox-created.jpg` — creation confirmation
-4. `04-add-mailbox-member.jpg` — Alex Johnson selected
-5. `05-member-saved.jpg` — membership confirmation
-6. `06-read-manage-permissions.jpg` — delegated mailbox access
-7. `07-send-as-permissions.jpg` — Send As delegation
-8. `08-outlook-permission-error.jpg` — initial troubleshooting evidence
-9. `09-shared-mailbox-added.jpg` — Outlook success confirmation
-10. `10-outlook-mailbox-visible.jpg` — shared mailbox in folder pane
-11. `11-send-as-successful-test.jpg` — received email from IT Support
-12. `12-verified-shared-mailbox-sender.jpg` — sender profile showing the shared address
+The following **10 authentic screenshots** are uploaded in [the screenshots folder](screenshots/). They document the initial setup and troubleshooting. Screenshots showing a later successful Outlook connection or email delivery have not been uploaded yet.
 
-Do not upload passwords, access tokens, recovery codes, or personal/sensitive information. Once images are uploaded, add Markdown image links to the corresponding steps.
+### 1. Initial inventory
+![Shared mailboxes before creation](screenshots/01-shared-mailboxes-before-creation.jpg)
+
+### 2. Mailbox creation
+![Create IT Support shared mailbox](screenshots/02-create-it-support-shared-mailbox.jpg)
+![Shared mailbox created successfully](screenshots/03-shared-mailbox-created-successfully.jpg)
+
+### 3. Membership
+![Select Alex Johnson as member](screenshots/04-select-alex-johnson-as-member.jpg)
+![Shared mailbox membership saved](screenshots/05-shared-mailbox-member-confirmed.jpg)
+
+### 4. Permission verification
+![Read and manage permission](screenshots/06-read-manage-permissions.jpg)
+![Send As permission](screenshots/07-send-as-permissions.jpg)
+
+### 5. Outlook access troubleshooting
+![Outlook server error](screenshots/08-outlook-open-mailbox-server-error.jpg)
+![Attempt using a different mailbox address](screenshots/09-outlook-incorrect-mailbox-error.jpg)
+![Permission error for the correct mailbox](screenshots/10-outlook-correct-mailbox-permission-error.jpg)
+
+**Evidence limitation:** These images prove the mailbox configuration and initial access errors. The later successful connection and Send As email test described above require separate screenshots for visual verification.
 
 ## Skills Demonstrated
 Microsoft 365 administration, Exchange Online shared mailboxes, Full Access vs. Send As delegation, Outlook on the web, permissions troubleshooting, verification, and ticket documentation.
 
 ## Result
-**Completed.** Created the IT Support shared mailbox, delegated access to Alex Johnson, recovered from initial Outlook access errors, and verified successful delivery of a test message from the shared mailbox identity. Screenshot upload and final README image embedding remain pending.
+**Completed.** Created the IT Support shared mailbox, delegated access to Alex Johnson, recovered from initial Outlook access errors, and verified successful delivery of a test message from the shared mailbox identity. Ten configuration and troubleshooting screenshots are embedded above; later successful Outlook and Send As verification screenshots remain to be uploaded.
