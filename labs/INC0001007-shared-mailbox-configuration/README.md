@@ -1,57 +1,94 @@
 # INC0001007 — Shared Mailbox Configuration
 
-**Status:** Planned — not yet performed  
-**Environment:** JGasta Labs Microsoft 365 / Microsoft Entra test tenant (non-production)  
-**Ticket type:** Simulated IT service request
+**Status:** Completed — configuration and Send As email test verified  
+**Environment:** JGasta Labs Microsoft 365 test tenant (non-production)  
+**Ticket type:** Simulated IT service request  
+**Service:** Microsoft 365 Admin Center / Exchange Online / Outlook on the web
 
 ## Scenario
+A fictional IT support team needs a central mailbox so authorized support staff can access incoming messages and reply using a team identity instead of their individual email address.
 
-A fictional support team needs a shared inbox with delegated access.
+## Objective
+Create an IT Support shared mailbox, delegate access to Alex Johnson, and verify that an email can be sent as the shared mailbox.
 
-## Objectives
+## Test Resources
+- **Shared mailbox display name:** IT Support
+- **Shared mailbox address:** `itsupport@GastaLabs.onmicrosoft.com`
+- **Delegated user:** Alex Johnson
+- **Validation recipient:** Alex Johnson
 
-Create a test shared mailbox; assign Full Access and Send As separately; verify delegation using test users; document permission changes.
+## Work Performed
 
-## Prerequisites and Safety
+### 1. Review the shared mailbox inventory
+In **Microsoft 365 admin center > Teams & groups > Shared mailboxes**, opened the shared mailbox list. No existing mailbox was shown in the list.
 
-- [ ] Confirm the required admin permissions, licensing, and feature availability in the test tenant.
-- [ ] Use only fictional users and non-sensitive test data.
-- [ ] Record the initial configuration before making changes.
-- [ ] Avoid modifying the tenant administrator, production accounts, or personal devices.
-- [ ] Plan a rollback for any access or policy changes.
+**Why:** Confirm the requested resource does not already exist before creating a duplicate.
 
-## Planned Procedure
+### 2. Create the shared mailbox
+Selected **Add a shared mailbox**, entered **IT Support** and the address `itsupport@GastaLabs.onmicrosoft.com`, and completed creation. The admin center displayed **Your shared mailbox was created**, and IT Support appeared in the mailbox list.
 
-- [ ] Identify the test user(s), resource, and requested outcome.
-- [ ] Review existing configuration and record the starting state.
-- [ ] Perform the relevant administrative configuration in the appropriate Microsoft admin center.
-- [ ] Verify the resulting permissions, behavior, or logs using a separate test session where feasible.
-- [ ] Troubleshoot any errors and record the observed outcome accurately.
-- [ ] Capture sanitized original screenshots and document rollback or cleanup.
+**Why:** Provide a common support address independent of any single employee's account.
+
+### 3. Add a member
+Opened **Add shared mailbox members**, selected **Alex Johnson**, and saved. The member list showed Alex Johnson with a **Saved** confirmation.
+
+**Why:** Delegate mailbox access to an authorized test user.
+
+### 4. Review mailbox delegation
+Opened the shared mailbox permission screens. The **Read and manage permissions** screen showed Alex Johnson. The **Send as permissions** screen also showed Alex Johnson.
+
+**Why:** These permissions serve different purposes: **Read and manage (Full Access)** allows opening and managing mailbox content; **Send As** allows a message to appear as originating from the shared mailbox. Full Access alone does not grant Send As.
+
+### 5. Connect the mailbox in Outlook
+Signed in to Outlook on the web as Alex Johnson and attempted to add the shared mailbox. Initial attempts displayed **Something went wrong** and **You don't have permission to add this account**. The mailbox had been created less than an hour earlier. A subsequent attempt displayed **Shared email account added**, and the IT Support mailbox appeared in the Outlook folder pane.
+
+**Why:** Test the user experience and recognize that new Exchange Online mailbox/delegation changes may take time to propagate.
+
+### 6. Test sending as IT Support
+Sent a test message with subject **IT Support Shared Mailbox Test** to Alex Johnson. The received email displayed **IT Support** as the sender. Opening the sender's profile confirmed the address `itsupport@GastaLabs.onmicrosoft.com`.
+
+**Why:** Validate the outcome from the recipient's perspective, rather than relying only on the permission configuration screens.
+
+## Troubleshooting Notes
+| Symptom | Observation / response | Outcome |
+| --- | --- | --- |
+| Outlook initially failed to load | Outlook displayed an error page | A later session opened successfully |
+| Shared mailbox could not be added | Outlook reported a permission error shortly after setup | Retried after allowing time for changes to take effect; mailbox added successfully |
+| **Show fields** was unavailable in the compose view | The control appeared disabled | Continued verification using the shared mailbox and inspected the received message's sender identity |
+
+**Important:** The observations above do not establish a definitive root cause for the temporary Outlook errors. Permission propagation is a plausible explanation, not a confirmed diagnosis.
 
 ## Verification Checklist
+- [x] Shared mailbox created and listed in Microsoft 365 admin center
+- [x] Alex Johnson shown as a mailbox member
+- [x] Alex Johnson shown under Read and manage permissions
+- [x] Alex Johnson shown under Send as permissions
+- [x] Shared mailbox added to Outlook on the web
+- [x] Test message received showing IT Support as sender
+- [x] Sender profile verified as `itsupport@GastaLabs.onmicrosoft.com`
+- [ ] Original screenshots uploaded to this lab's `screenshots/` folder
+- [ ] Optional cleanup / rollback documented if the test mailbox is later removed
 
-- [ ] Correct test account/resource selected
-- [ ] Configuration change verified
-- [ ] Expected behavior tested
-- [ ] No unintended permissions granted
-- [ ] Screenshots and ticket notes saved
+## Screenshot Evidence — Upload Pending
+Upload only authentic screenshots from the lab to `screenshots/`. Suggested filenames:
 
-## Screenshot Evidence — Planned
+1. `01-shared-mailbox-initial-list.jpg` — mailbox list before creation
+2. `02-add-shared-mailbox.jpg` — name and address entry
+3. `03-shared-mailbox-created.jpg` — creation confirmation
+4. `04-add-mailbox-member.jpg` — Alex Johnson selected
+5. `05-member-saved.jpg` — membership confirmation
+6. `06-read-manage-permissions.jpg` — delegated mailbox access
+7. `07-send-as-permissions.jpg` — Send As delegation
+8. `08-outlook-permission-error.jpg` — initial troubleshooting evidence
+9. `09-shared-mailbox-added.jpg` — Outlook success confirmation
+10. `10-outlook-mailbox-visible.jpg` — shared mailbox in folder pane
+11. `11-send-as-successful-test.jpg` — received email from IT Support
+12. `12-verified-shared-mailbox-sender.jpg` — sender profile showing the shared address
 
-Save authentic, sanitized screenshots in `screenshots/` after completing the lab. Suggested names:
+Do not upload passwords, access tokens, recovery codes, or personal/sensitive information. Once images are uploaded, add Markdown image links to the corresponding steps.
 
-1. `01-initial-state.jpg`
-2. `02-configuration.jpg`
-3. `03-verification.jpg`
-4. `04-final-result.jpg`
-
-Do not upload passwords, recovery codes, enrollment QR codes, access tokens, personal information, or tenant secrets.
-
-## Skills to Demonstrate
-
-Exchange Online, shared mailboxes, delegation, email administration.
+## Skills Demonstrated
+Microsoft 365 administration, Exchange Online shared mailboxes, Full Access vs. Send As delegation, Outlook on the web, permissions troubleshooting, verification, and ticket documentation.
 
 ## Result
-
-**Not yet performed.** Replace this section with verified outcomes and link the actual screenshots after completing the exercise.
+**Completed.** Created the IT Support shared mailbox, delegated access to Alex Johnson, recovered from initial Outlook access errors, and verified successful delivery of a test message from the shared mailbox identity. Screenshot upload and final README image embedding remain pending.
