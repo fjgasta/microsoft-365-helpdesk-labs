@@ -1,6 +1,6 @@
-# INC0001011 — Employee Offboarding: Jordan Rivera
+# Supplemental Practice — Employee Offboarding: Jordan Rivera
 
-**Status:** Administrative workflow completed; screenshot publication pending  
+**Status:** Supplemental practice only — not counted as a separate numbered lab; screenshot publication pending  
 **Environment:** JGasta Labs — Microsoft 365 / Microsoft Entra ID test tenant  
 **Scenario:** Fictional employee departure; retain account while revoking access
 
