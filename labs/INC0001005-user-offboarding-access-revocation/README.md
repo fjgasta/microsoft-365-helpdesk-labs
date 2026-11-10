@@ -99,6 +99,10 @@ All ten original lab screenshots have been uploaded to the `screenshots/` direct
 - License reclamation and entitlement review
 - Access verification, evidence collection, and help desk ticket documentation
 
+## Optional Additional Practice
+
+A separate [Jordan Rivera offboarding practice scenario](../INC0001011-jordan-rivera-offboarding/README.md) documents repetition of the same offboarding workflow. It is **supplemental practice**, not another required portfolio lab or a replacement for this completed ticket.
+
 ## Ticket Resolution
 
 **Completed:** Philip Stone's test account was blocked from sign-in, sign-in sessions were revoked, JGasta Labs group membership was removed, and the Business Premium license was reclaimed. A subsequent sign-in attempt did not obtain access and displayed an account-locked message. The user account was retained; no permanent deletion was performed.
