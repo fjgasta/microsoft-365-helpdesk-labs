@@ -1,57 +1,84 @@
-# INC0001008 — SharePoint and OneDrive Permissions
+# INC0001008 — SharePoint & OneDrive Permissions
 
-**Status:** Planned — not yet performed  
-**Environment:** JGasta Labs Microsoft 365 / Microsoft Entra test tenant (non-production)  
-**Ticket type:** Simulated IT service request
+**Status:** Completed — hands-on exercises verified; screenshot upload pending  
+**Environment:** JGasta Labs Microsoft 365 test tenant  
+**Ticket type:** Simulated IT support / access-management request  
+**Test user:** Alex Johnson  
+**Services:** SharePoint Online, OneDrive for Business, Microsoft 365 admin center, Word for the web
 
-## Scenario
+## Service Request
 
-A fictional employee cannot access a team document and needs appropriate permissions.
+Validate least-privilege access to shared documents. Give Alex Johnson view-only access where required, investigate overlapping SharePoint group permissions, and demonstrate how changing a OneDrive file's permissions affects editing capability.
 
-## Objectives
+## Work Performed
 
-Create a non-sensitive test document/library; review sharing and access; grant the minimum needed access; test and revoke permissions.
+### Part A — SharePoint document permissions
 
-## Prerequisites and Safety
+1. Opened the **IT Support Lab** SharePoint site's Documents library and selected `IAM-Acces-Test.docx`.
+2. Inspected **Manage access**, including **People**, **Groups**, and **Links**.
+3. Shared the document directly with Alex Johnson using **Can view**.
+4. Found an apparent mismatch: SharePoint's access summary initially displayed **Can edit**, while the detailed direct-access entry showed **Can view**.
+5. Investigated site permissions, including the **IT Support Lab Members** group and the **IT-Support-Team** entry with **Edit** rights.
+6. Confirmed Alex belonged to **IT-Support-Team** in Microsoft 365 admin center, then removed that group membership for troubleshooting.
+7. Refreshed and rechecked document access. **Manage access** subsequently displayed **Alex Johnson — Can view**.
+8. Tested the document in Alex's session; Word displayed **Viewing**.
 
-- [ ] Confirm the required admin permissions, licensing, and feature availability in the test tenant.
-- [ ] Use only fictional users and non-sensitive test data.
-- [ ] Record the initial configuration before making changes.
-- [ ] Avoid modifying the tenant administrator, production accounts, or personal devices.
-- [ ] Plan a rollback for any access or policy changes.
+**Troubleshooting lesson:** File-level view permission does not necessarily override editing access inherited through a site/group. Effective access must be tested, not inferred from a single sharing dialog.
 
-## Planned Procedure
+### Part B — OneDrive file permissions
 
-- [ ] Identify the test user(s), resource, and requested outcome.
-- [ ] Review existing configuration and record the starting state.
-- [ ] Perform the relevant administrative configuration in the appropriate Microsoft admin center.
-- [ ] Verify the resulting permissions, behavior, or logs using a separate test session where feasible.
-- [ ] Troubleshoot any errors and record the observed outcome accurately.
-- [ ] Capture sanitized original screenshots and document rollback or cleanup.
+1. Signed in as the file owner and selected `Test_Test.docx` in **OneDrive → My files**.
+2. Shared the file with Alex Johnson using **Can view**.
+3. Verified the file appeared in Alex's **OneDrive → Shared → With you** list.
+4. Opened the file as Alex and confirmed **Viewing** mode.
+5. Returned to the owner's **Manage access** panel, reviewed **Direct Access**, and selected **Can edit** for Alex.
+6. Opened the document again as Alex. The final screenshot shows **Editing** mode, visible document content, and a cloud save-status indicator.
 
-## Verification Checklist
+## Verification Results
 
-- [ ] Correct test account/resource selected
-- [ ] Configuration change verified
-- [ ] Expected behavior tested
-- [ ] No unintended permissions granted
-- [ ] Screenshots and ticket notes saved
+| Test | Observed result |
+| --- | --- |
+| SharePoint direct sharing | Alex was invited with **Can view** |
+| SharePoint permission conflict | Group-based edit access investigated and membership adjusted |
+| SharePoint final access display | **Can view** shown in Manage access |
+| SharePoint user test | Document opened in **Viewing** mode |
+| OneDrive view-only sharing | File appeared in Alex's Shared list and opened in **Viewing** mode |
+| OneDrive permission change | **Can edit** selected for Alex |
+| OneDrive final user test | Document opened as Alex in **Editing** mode with save-status indicator |
 
-## Screenshot Evidence — Planned
+**Evidence limitation:** The final screenshot confirms editing mode and a saved document, but a separate owner-side comparison of a newly added test sentence was not captured. Do not describe that additional check as performed.
 
-Save authentic, sanitized screenshots in `screenshots/` after completing the lab. Suggested names:
+## Screenshot Evidence — Upload Pending
 
-1. `01-initial-state.jpg`
-2. `02-configuration.jpg`
-3. `03-verification.jpg`
-4. `04-final-result.jpg`
+Original screenshots were captured during the exercise. Add selected authentic images to `screenshots/` using these descriptive filenames. These links will work after the images are uploaded:
 
-Do not upload passwords, recovery codes, enrollment QR codes, access tokens, personal information, or tenant secrets.
+| Filename | Evidence to capture from original screenshot |
+| --- | --- |
+| `01-sharepoint-document-library.jpg` | IT Support Lab Documents library and test file |
+| `02-sharepoint-view-only-share.jpg` | Alex invited to view the SharePoint document |
+| `03-sharepoint-permission-conflict.jpg` | Access summary showing edit versus direct view |
+| `04-sharepoint-site-groups.jpg` | Site permissions showing group edit rights |
+| `05-alex-group-membership.jpg` | Microsoft 365 admin center showing IT-Support-Team membership |
+| `06-group-membership-removal.jpg` | Saved group membership change |
+| `07-sharepoint-final-can-view.jpg` | SharePoint Manage access showing Can view |
+| `08-onedrive-share-view.jpg` | OneDrive share dialog / view-only invitation |
+| `09-alex-shared-with-you.jpg` | Alex's OneDrive Shared list |
+| `10-alex-onedrive-viewing.jpg` | OneDrive Word document in Viewing mode |
+| `11-onedrive-change-to-edit.jpg` | Owner's Manage access with Can edit selected |
+| `12-alex-onedrive-editing.jpg` | Final Word screenshot as Alex in Editing mode |
 
-## Skills to Demonstrate
+Only upload filenames for which the original screenshot is available. Review each for sensitive data before publishing.
 
-SharePoint Online, OneDrive, sharing permissions, troubleshooting.
+## Resolution
 
-## Result
+**Lab exercise completed.** Demonstrated SharePoint access troubleshooting, effective-permission investigation, least-privilege file sharing, OneDrive view-to-edit changes, and user-side verification. Screenshot publishing is the remaining documentation task.
 
-**Not yet performed.** Replace this section with verified outcomes and link the actual screenshots after completing the exercise.
+## Skills Demonstrated
+
+- SharePoint Online access management and group permissions
+- Microsoft 365 group membership troubleshooting
+- OneDrive for Business direct-access permissions
+- Least-privilege sharing: **Can view** versus **Can edit**
+- Separate-user verification and help desk documentation
+
+*Fictional users and non-production test environment. Independent training project.*
